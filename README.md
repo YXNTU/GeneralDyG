@@ -19,6 +19,8 @@ This repository contains the official implementation of the paper: "A Generaliza
 
 ## Preprocessing
 
+[download the dataset](https://drive.google.com/drive/folders/1nJGwX0QaWZY3RH8JfqogJYMbq9PXkYhC?usp=sharing)
+
 Before running the main code, generate the necessary preprocessed data files by executing:
 
 ```bash
