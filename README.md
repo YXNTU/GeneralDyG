@@ -16,3 +16,25 @@ This repository contains the official implementation of the paper: "A Generaliza
 - **torch-scatter**: `2.1.0+pt112cu116`  
 - **torch-sparse**: `0.6.18`  
 - **tqdm**: `4.65.2`  
+
+## Preprocessing
+
+Before running the main code, generate the necessary preprocessed data files by executing:
+
+```bash
+python generate_datasets.py
+
+### Instructions
+- In `generate_datasets.py`, you can adjust the parameters `k` and `dataset_name` to generate different versions of preprocessed data.
+- **`k`**: Controls specific preprocessing behaviors (e.g., the number of neighbors, graph characteristics, etc.).
+- **`dataset_name`**: Specifies the dataset to preprocess.
+
+### Provided Preprocessed Data
+We provide preprocessed versions of the **Alpha** and **OTC** datasets with `k=1`.  
+These preprocessed datasets can be found in the `dataset/` directory.
+
+### Directory Structure
+```plaintext
+dataset/
+├── btc_alpha.pkl/
+└── btc_otc.pkl/
