@@ -23,6 +23,7 @@ Before running the main code, generate the necessary preprocessed data files by 
 
 ```bash
 python generate_datasets.py
+```
 
 ### Instructions
 - In `generate_datasets.py`, you can adjust the parameters `k` and `dataset_name` to generate different versions of preprocessed data.
