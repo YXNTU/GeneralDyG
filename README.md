@@ -27,7 +27,7 @@ python generate_datasets.py
 
 ### Instructions
 - In `generate_datasets.py`, you can adjust the parameters `k` and `dataset_name` to generate different versions of preprocessed data.
-- **`k`**: Controls specific preprocessing behaviors (e.g., the number of neighbors, graph characteristics, etc.).
+- **`k`**: Controls specific preprocessing behaviors.
 - **`dataset_name`**: Specifies the dataset to preprocess.
 
 ### Provided Preprocessed Data
@@ -39,3 +39,12 @@ These preprocessed datasets can be found in the `dataset/` directory.
 dataset/
 ├── btc_alpha.pkl/
 └── btc_otc.pkl/
+```
+
+## Start Training
+
+After completing the preprocessing step, start the training process by running:
+
+```bash
+python train.py
+```
