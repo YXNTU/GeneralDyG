@@ -40,18 +40,52 @@ We provide preprocessed versions of the **Alpha** and **OTC** datasets with `k=1
 These preprocessed datasets can be found in the `dataset/` directory.
 
 ### Directory Structure
+After dataset preprocessing, the auto-generated folder structure of datasets is as follows:
 ```plaintext
 dataset/
-├── btc_alpha.pkl/
-└── btc_otc.pkl/
-```
+├── btc_alpha_0.5_0.01.csv
+├── btc_alpha_0.5_0.05.csv
+├── btc_alpha_0.5_0.1.csv
+├── btc_alpha.pkl
+├── btc_otc_0.5_0.01.csv
+├── btc_otc_0.5_0.05.csv
+├── btc_otc_0.5_0.1.csv
+├── btc_otc.pkl
+
 
 ## Start Training
 
 After completing the preprocessing step, start the training process by running:
 
 ```bash
-python train.py
+python Denoise.py --data_set btc_alpha --neg 01 --max_len 24
+
+# General Parameters
+# --dir_data [Path to the dataset directory, default='./dataset']
+# --name_pos [Positive class name, default='EU3']
+# --ratio_neg [Negative sample ratio, e.g., '1', default='1']
+# --data_set ['wikipedia', 'reddit', 'wadi', 'btc_otc', 'btc_alpha']
+# --neg ['01', '05', '1'] (Negative data ratio selection)
+# --max_len [Maximum sequence length, e.g., 24 for 'wikipedia']
+
+# Data Parameters
+# --batch_size [Batch size, e.g., 128, default=128]
+# --n_epochs [Number of epochs, default=200]
+# --num_data_workers [Number of data workers, e.g., 0, default=0]
+# --gpus [Number of GPUs, default=1]
+
+# Model Parameters
+# --ckpt_file [Path to the checkpoint file, default='./']
+# --input_dim [Input dimension, e.g., 128, default=128]
+# --hidden_dim [Hidden layer dimension, e.g., 258, default=258]
+# --n_heads [Number of attention heads, default=4]
+# --drop_out [Dropout rate, e.g., 0.4, default=0.4]
+# --n_layer [Number of network layers, default=6]
+# --learning_rate [Learning rate, e.g., 0.0001, default=0.0001]
+# --seed [Random seed, default=95540]
 ```
 
+## License
+
+This project is released under the MIT License. Our models and codes must only be used for research purposes.
 
