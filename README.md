@@ -22,7 +22,7 @@ Anomaly detection aims to identify deviations from normal patterns within data. 
 ![tqdm](https://img.shields.io/badge/tqdm-4.65.2-pink)
 
 ## Preprocessing
-Here, we provide two preprocessed datasets: **Bitcoin-Alpha** and **Bitcoin-OTC**. Please download the preprocessed datasets ([download the dataset]([URL](https://drive.google.com/drive/folders/1nJGwX0QaWZY3RH8JfqogJYMbq9PXkYhC?usp=sharing))) and extract them into the current directory.
+Here, we provide two preprocessed datasets: **Bitcoin-Alpha** and **Bitcoin-OTC**. Please download the preprocessed datasets [download the dataset](https://drive.google.com/drive/folders/1nJGwX0QaWZY3RH8JfqogJYMbq9PXkYhC?usp=sharing) and extract them into the current directory.
 
 You can choose to preprocess the data before training or use the two sample files we provided. Please run the following command to preprocess the data:
 
