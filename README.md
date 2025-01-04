@@ -54,6 +54,4 @@ After completing the preprocessing step, start the training process by running:
 python train.py
 ```
 
-## Model Structure
-[process.pdf](https://github.com/user-attachments/files/18140405/process.pdf)
 
