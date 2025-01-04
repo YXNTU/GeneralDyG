@@ -6,20 +6,20 @@ Anomaly detection aims to identify deviations from normal patterns within data. 
 
 ## Requirements
 
-- **h5py**: `3.7.0`  
-- **imbalanced-learn**: `0.12.3`  
-- **imblearn**: `0.0`  
-- **matplotlib**: `3.10.0`  
-- **networkx**: `2.8.7`  
-- **numpy**: `1.23.3`  
-- **pandas**: `1.4.4`  
-- **scikit-learn**: `1.6.0`  
-- **scipy**: `1.8.1`  
-- **torch**: `2.1.2+cu121`  
-- **torch-geometric**: `2.2.0`  
-- **torch-scatter**: `2.1.0+pt112cu116`  
-- **torch-sparse**: `0.6.18`  
-- **tqdm**: `4.65.2`  
+![h5py](https://img.shields.io/badge/h5py-3.7.0-blue)
+![imbalanced-learn](https://img.shields.io/badge/imbalanced--learn-0.12.3-orange)
+![imblearn](https://img.shields.io/badge/imblearn-0.0-lightgrey)
+![matplotlib](https://img.shields.io/badge/matplotlib-3.10.0-purple)
+![networkx](https://img.shields.io/badge/networkx-2.8.7-darkblue)
+![numpy](https://img.shields.io/badge/numpy-1.23.3-yellow)
+![pandas](https://img.shields.io/badge/pandas-1.4.4-green)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.0-red)
+![scipy](https://img.shields.io/badge/scipy-1.8.1-cyan)
+![torch](https://img.shields.io/badge/torch-2.1.2%2Bcu121-brightgreen)
+![torch-geometric](https://img.shields.io/badge/torch--geometric-2.2.0-lightblue)
+![torch-scatter](https://img.shields.io/badge/torch--scatter-2.1.0%2Bpt112cu116-lightgreen)
+![torch-sparse](https://img.shields.io/badge/torch--sparse-0.6.18-gold)
+![tqdm](https://img.shields.io/badge/tqdm-4.65.2-pink)
 
 ## Preprocessing
 
