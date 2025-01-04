@@ -1,5 +1,5 @@
 # A Generalizable Anomaly Detection Method in Dynamic Graphs
-This repository contains the official implementation of the paper: "A Generalizable Anomaly Detection Method in Dynamic Graphs", accepted at AAAI 2025.
+This repository contains the official implementation of the paper: ["A Generalizable Anomaly Detection Method in Dynamic Graphs"](https://arxiv.org/abs/2412.16447), accepted at AAAI 2025.
 ## Requirements
 
 - **h5py**: `3.7.0`  
