@@ -58,7 +58,7 @@ dataset/
 After completing the preprocessing step, start the training process by running:
 
 ```bash
-python Denoise.py --data_set btc_alpha --neg 01 --max_len 24
+python run.py --data_set btc_alpha --neg 01 --max_len 24
 
 # General Parameters
 # --dir_data [Path to the dataset directory, default='./dataset']
