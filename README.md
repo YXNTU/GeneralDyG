@@ -85,6 +85,22 @@ python run.py
 # --seed [Random seed, default=95540]
 ```
 
+## 📖 Citation
+
+If you find our work useful, please consider citing our papers:
+
+```bibtex
+@inproceedings{yang2025generalizable,
+  title={A generalizable anomaly detection method in dynamic graphs},
+  author={Yang, Xiao and Zhao, Xuejiao and Shen, Zhiqi},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={20},
+  pages={22001--22009},
+  year={2025}
+}
+```
+
 ## License
 
 This project is released under the MIT License. Our models and codes must only be used for research purposes.
