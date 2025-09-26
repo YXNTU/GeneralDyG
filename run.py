@@ -1,6 +1,7 @@
-from option import parse_args
+from option import args
 from train import main
 
 args = parse_args()
 
 main()
+
