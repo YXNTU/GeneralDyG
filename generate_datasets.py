@@ -133,14 +133,14 @@ class BatchGraphSample:
 
         return T
 
-    def sparse_mx_to_torch_sparse_tensor(self, sparse_mx):
-        """Convert a scipy sparse matrix to a torch sparse tensor."""
+def sparse_mx_to_torch_sparse_tensor(self, sparse_mx):
+        """Convert a scipy sparse matrix to a torch sparse tensor. (now dense tensor)"""
         sparse_mx = sparse_mx.tocoo().astype(np.float32)
         indices = torch.from_numpy(
             np.vstack((sparse_mx.row, sparse_mx.col)).astype(np.int64))
         values = torch.from_numpy(sparse_mx.data)
         shape = torch.Size(sparse_mx.shape)
-        return torch.sparse.FloatTensor(indices, values, shape)
+        return torch.sparse.FloatTensor(indices, values, shape).to_dense()
 
     def create_edge_adj(self, vertex_adj):
         '''
